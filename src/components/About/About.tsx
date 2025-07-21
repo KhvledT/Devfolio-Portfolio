@@ -249,7 +249,7 @@ const About: React.FC = () => {
                       loading="lazy"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
-                        target.src = '/imgs/hero-bg.jpg'; // fallback image
+                        target.src = `${import.meta.env.BASE_URL}imgs/hero-bg.jpg`;
                       }}
                     />
                   </div>
