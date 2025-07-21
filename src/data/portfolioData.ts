@@ -6,7 +6,7 @@ export const personalInfo: PersonalInfo = {
   profile: "Full Stack Developer",
   email: "contact@example.com",
   phone: "(617) 557-0089",
-  image: "/imgs/testimonial-2.jpg",
+  image: `${import.meta.env.BASE_URL}imgs/testimonial-2.jpg`,
   about: [
     "I am a full stack developer specializing in modern web development. I have extensive experience working with the latest technologies and contemporary development methodologies.",
     "I work on providing innovative and advanced solutions that meet client needs and exceed their expectations. I believe in the importance of quality and efficiency in every project I work on.",
@@ -66,42 +66,42 @@ export const projects: Project[] = [
     id: 1,
     title: "Tech Company Website Design",
     category: "Web Design",
-    image: "/imgs/work-1.jpg",
+    image: `${import.meta.env.BASE_URL}imgs/work-1.jpg`,
     date: "18 Sep. 2023"
   },
   {
     id: 2,
     title: "Interactive Web Application",
     category: "Web Development",
-    image: "/imgs/work-2.jpg",
+    image: `${import.meta.env.BASE_URL}imgs/work-2.jpg`,
     date: "15 Sep. 2023"
   },
   {
     id: 3,
     title: "Complete E-commerce Store",
     category: "Web Development",
-    image: "/imgs/work-3.jpg",
+    image: `${import.meta.env.BASE_URL}imgs/work-3.jpg`,
     date: "12 Sep. 2023"
   },
   {
     id: 4,
     title: "Mobile Application",
     category: "App Development",
-    image: "/imgs/work-4.jpg",
+    image: `${import.meta.env.BASE_URL}imgs/work-4.jpg`,
     date: "10 Sep. 2023"
   },
   {
     id: 5,
     title: "Content Management System",
     category: "Web Development",
-    image: "/imgs/work-5.jpg",
+    image: `${import.meta.env.BASE_URL}imgs/work-5.jpg`,
     date: "8 Sep. 2023"
   },
   {
     id: 6,
     title: "Educational Platform",
     category: "Web Development",
-    image: "/imgs/work-6.jpg",
+    image: `${import.meta.env.BASE_URL}imgs/work-6.jpg`,
     date: "5 Sep. 2023"
   }
 ];
@@ -112,7 +112,7 @@ export const blogPosts: BlogPost[] = [
     id: 1,
     title: "Best Travel Apps for Developers",
     category: "Travel",
-    image: "/imgs/post-1.jpg",
+    image: `${import.meta.env.BASE_URL}imgs/post-1.jpg`,
     excerpt: "Discover the best applications and technologies that help developers travel and work remotely with high efficiency.",
     author: "Morgan Freeman",
     readTime: "10 min",
@@ -122,7 +122,7 @@ export const blogPosts: BlogPost[] = [
     id: 2,
     title: "Latest Web Design Trends 2024",
     category: "Web Design",
-    image: "/imgs/post-2.jpg",
+    image: `${import.meta.env.BASE_URL}imgs/post-2.jpg`,
     excerpt: "Learn about the latest trends and technologies in web design for 2024.",
     author: "Morgan Freeman",
     readTime: "15 min",
@@ -132,7 +132,7 @@ export const blogPosts: BlogPost[] = [
     id: 3,
     title: "Best Framework for Web Development",
     category: "Web Development",
-    image: "/imgs/post-3.jpg",
+    image: `${import.meta.env.BASE_URL}imgs/post-3.jpg`,
     excerpt: "Comprehensive comparison between the best frameworks used in modern web development.",
     author: "Morgan Freeman",
     readTime: "20 min",
@@ -145,13 +145,13 @@ export const testimonials: Testimonial[] = [
   {
     id: 1,
     name: "Xavi Alonso",
-    image: "/imgs/testimonial-2.jpg",
+    image: `${import.meta.env.BASE_URL}imgs/testimonial-2.jpg`,
     content: "Excellent work and high quality in development. Morgan is a professional developer and specialist in his field. I highly recommend working with him."
   },
   {
     id: 2,
     name: "Marta Socrate",
-    image: "/imgs/testimonial-4.jpeg",
+    image: `${import.meta.env.BASE_URL}imgs/testimonial-4.jpeg`,
     content: "Amazing experience working with Morgan. He delivered a fantastic website that exceeded our expectations. I will definitely work with him again."
   }
 ];

@@ -32,7 +32,7 @@ const SectionTitle = styled.h2`
 `;
 
 const StatsSection = styled.div`
-  background: linear-gradient(120deg, rgba(0,120,255,0.5) 60%, #0056b3 100%), url('/imgs/Carousel-bg.jpg');
+  background: linear-gradient(120deg, rgba(0,120,255,0.5) 60%, #0056b3 100%), url('${import.meta.env.BASE_URL}imgs/Carousel-bg.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

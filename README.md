@@ -88,6 +88,20 @@ npm run preview
 
 ---
 
+## 🌐 Supported Browsers
+
+DevFolio is tested and works seamlessly on all modern browsers:
+
+- Google Chrome (latest 2 versions)
+- Mozilla Firefox (latest 2 versions)
+- Microsoft Edge (latest 2 versions)
+- Apple Safari (latest 2 versions)
+- Opera (latest 2 versions)
+
+> **Note:** The template uses modern CSS and JavaScript features. For best experience, use an up-to-date browser. Legacy browsers (like Internet Explorer) are not officially supported.
+
+---
+
 ## 🎨 Customization
 - **Colors:** Edit CSS variables in `src/styles/GlobalStyles.ts`
 - **Content:** Update data in `src/data/portfolioData.ts` (personal info, skills, projects, services, blog, contact, stats)

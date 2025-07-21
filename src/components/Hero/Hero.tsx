@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = styled.section`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.626)), url('/imgs/hero-bg.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.626)), url('${import.meta.env.BASE_URL}imgs/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -90,13 +90,17 @@ const CTAButton = styled(motion.button)`
   }
 `;
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  startAnimation?: boolean;
+}
+
+const Hero: React.FC<HeroProps> = ({ startAnimation }) => {
   return (
     <HeroSection id="home">
       <HeroContent>
         <HeroTitle
           initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={startAnimation ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8 }}
         >
           I am Morgan Freeman
@@ -104,7 +108,7 @@ const Hero: React.FC = () => {
         
         <HeroSubtitle
           initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={startAnimation ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           Full Stack
@@ -124,7 +128,7 @@ const Hero: React.FC = () => {
         
         <CTAButton
           initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={startAnimation ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
