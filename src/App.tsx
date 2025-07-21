@@ -20,7 +20,7 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  // عند انتهاء أنيميشن الخروج للبريلودر
+  // When the preloader exit animation completes
   const handlePreloaderExitComplete = () => {
     setShowHeroAnimation(true);
   };
